@@ -1,0 +1,50 @@
+.parallax-bakery {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	max-height: 900px;
+	width: 100%;
+	padding: 100px 150px;
+}
+
+.bakery {
+	align-items: flex-start;
+}
+
+.bakery h1 {
+	margin-bottom: 50px;
+}
+
+.bakery p {
+	font-size: 22px;
+	line-height: 28px;
+	width: 515px;
+	margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .parallax-bakery {
+    padding: 100px 100px;
+  }
+}
+
+@media only screen and (max-width: 1054px) {
+  .parallax-bakery {
+    padding: 100px 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bakery h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  
+  .bakery p {
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+  }
+}
