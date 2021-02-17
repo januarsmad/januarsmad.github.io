@@ -22,6 +22,10 @@ h1 {
 	line-height: 36px;
 }
 
+a {
+	color: #fff;
+}
+
 h2 {
 	font-size: 30px;
 	font-weight: 500;
