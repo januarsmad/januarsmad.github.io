@@ -16,6 +16,7 @@ $('.burger-menu').click(function() {
 });
 /* Toggle Hamburger Menu */
 
+/* On Scroll Animation */
 var nav = $('.nav');
 var navLogo = $('.logo-container');
 var heroLogo = $('.hero-logo');
@@ -26,6 +27,10 @@ var storyTextContent = $('.desc-content');
 var storyPhoto = $('.story-photo');
 var storyStamp = $('.story-stamp');
 var storyText = $('.story-text');
+
+var bakeryTitle = $('.bakery-title');
+var bakeryDesc = $('.bakery-desc');
+var bakeryBtn = $('.bakery-btn');
 
 if (storyImgContent.visible(true)) {
   storyText.addClass('slide-up');
@@ -45,4 +50,44 @@ $(window).scroll(function(event) {
   storyTextContent.visible(true) && storyText.addClass('slide-up');
   storyImgContent.visible(true) && storyPhoto.addClass('slide-in');
   storyImgContent.visible(true) && storyStamp.addClass('scale-down');
+
+  if(bakeryTitle.visible(true)) {
+    bakeryTitle.addClass('slide-up-bakery');
+    bakeryDesc.addClass('slide-up-bakery');
+    bakeryBtn.addClass('slide-up-bakery');
+  }
 });
+/* On Scroll Animation */
+
+$('.ig-icon').click(function() {
+  window.open('http://www.instagram.com/hampstead.cafe', '_blank')
+})
+
+$('.fb-icon').click(function() {
+  window.open('https://www.facebook.com/HampsteadCafe/', '_blank')
+})
+
+$(".about").click(function() {
+  dropdownNav.toggleClass('toggle-drowpdown')
+  $('html, body').animate({
+      scrollTop: $(".story-section").offset().top - 70
+  }, 800);
+});
+
+$(".gallery").click(function() {
+  dropdownNav.toggleClass('toggle-drowpdown')
+  $('html, body').animate({
+      scrollTop: $(".ig-section").offset().top - 70
+  }, 800);
+});
+
+$(".contact").click(function() {
+  dropdownNav.toggleClass('toggle-drowpdown')
+  $('html, body').animate({
+      scrollTop: $(".contact-section").offset().top - (window.innerWidth <= 768 ? 100 : 70)
+  }, 800);
+});
+
+function viewPost(url) {
+  window.open(url, '_blank')
+}

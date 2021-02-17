@@ -24,6 +24,32 @@
 	margin-bottom: 50px;
 }
 
+.bakery-title {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1000ms ease;
+}
+
+.bakery-desc {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1000ms ease;
+  transition-delay: 1000ms;
+}
+
+.bakery-btn {
+  transform: translateY(200px);
+  opacity: 0;
+  transition: all 1000ms ease;
+  transition-property: transform, opacity;
+  transition-delay: 1500ms;
+}
+
+.slide-up-bakery {
+	transform: translateY(0px);
+  opacity: 1;
+}
+
 @media only screen and (max-width: 1300px) {
   .parallax-bakery {
     padding: 100px 100px;

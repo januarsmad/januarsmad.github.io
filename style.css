@@ -46,56 +46,14 @@ button {
 	outline: none;
 }
 
-@media only screen and (max-width: 768px) {
-  button {
-    font-size: 16px;
-    width: 150px;
-    height: 40px;
-  }
+button:hover {
+	border-color: #ECC3B2;
+	color: #ECC3B2;
 }
 
-#loader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #ECC3B2;
-  z-index: 9999;
-}
-
-.flex-center {
-	display: flex;
-	align-items: center;
-  justify-content: center;
-}
-
-nav {
-	display: flex;
-	position: absolute;
-	justify-content: space-between;
+.content-container {
 	width: 100%;
-	height: 70px;
-  padding: 0px 40px;
-}
-
-.nav-fixed {
-  background: #235b4e;
-  transform: translateY(-200px);
-  opacity: 0;
-  transition: all 300ms ease;
-  position: fixed;
-	z-index: -999;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.nav-slide {
-  opacity: 1;
-  z-index: 999;
-  transform: translateY(0px);
-}
-
-nav .burger-menu {
-	display: none;
-	z-index: 1;
+	max-width: 1140px;
 }
 
 .sosmed {
@@ -113,192 +71,39 @@ nav .burger-menu {
 	cursor: pointer;
 }
 
-nav .logo-container {
-  position: absolute;
+@media only screen and (max-width: 768px) {
+  button {
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+  }
+}
+
+#loader {
+  position: fixed;
+  background: #ECC3B2;
+  z-index: 999;
+	flex-direction: column;
+	top: 0;
 	left: 0;
+	bottom: 0;
 	right: 0;
-  height: 70px;
-	z-index: -9999;
 }
 
-nav .logo-container img {
-	height: 50px;
-}
-
-nav ul {
+.flex-center {
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
-	z-index: 1;
+  justify-content: center;
 }
 
-nav ul li {
-	display: inline;
-	margin-left: 40px;
-	list-style: none;
-	font-family: Nats;
-	font-size: 18px;
-	color: #fff;
-	cursor: pointer;
-}
-
-section.phone {
-	display: none;
-}
-
-section.dropdown-nav {
-	display: none;
-}
-
-.content-container {
-	width: 100%;
-	max-width: 1140px;
-}
-
-.parallax {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	max-height: 900px;
-	width: 100%;
-	padding: 100px 150px;
-}
-
-.hero-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 80px 0px;
-	background: rgba(35, 91, 78, 0.8);
-}
-
-.hero-content img {
-	width: 500px;
-	margin-bottom: 65px;
-}
-
-.hero-content h2:nth-last-child(even) {
+#loader h2 {
+	color: #235b4e;
 	margin-top: 20px;
-	margin-bottom: 65px;
 }
 
 @media only screen and (max-width: 768px) {
-  .parallax {
-    padding: 100px 50px;
-    height: calc(100vh - 105px);
-  }
-
-  .hero {
-    margin-top: 105px;
-  }
-
-  .hero-content {
-    padding: 50px 30px;
-  }
-
-  .hero-content img {
-    width: 100%;
-    margin-bottom: 65px;
-  }
+  #loader img {
+		width: 90%;
+	}
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    background: #235b4e;
-  }
-
-  nav .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-	nav .burger-menu {
-		display: block;
-	}
-
-	nav .burger-menu {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	nav .burger-menu .line1,
-	.line2,
-	.line3 {
-		width: 25px;
-		height: 3px;
-		margin: 3px 0px;
-		background: #fff;
-		transform: rotate(0deg);
-		opacity: 1;
-		transform-origin: left;
-		transition: all 300ms ease;
-	}
-
-	nav .burger-menu .toggle1 {
-		transform: rotate(45deg);
-	}
-
-	nav .burger-menu .toggle2 {
-		opacity: 0;
-	}
-
-	nav .burger-menu .toggle3 {
-		transform: rotate(-45deg);
-	}
-
-	nav .sosmed {
-		display: none;
-	}
-
-	nav ul {
-		display: none;
-	}
-
-	section.phone {
-    position: fixed;
-		display: flex;
-		justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 35px;
-    z-index: 999;
-		background: #ecc3b2;
-    top: 70px;
-	}
-
-	section.phone h3 {
-		font-size: 22px;
-		line-height: 22px;
-		margin-left: 10px;
-		color: #235b4e;
-  }
-
-	section.dropdown-nav {
-    display: block;
-    position: fixed;
-    width: 100vw;
-		text-align: center;
-		padding-bottom: 30px;
-		background: #235b4e;
-		transform: translateY(-100vh);
-		transition: all 500ms ease;
-		z-index: 99;
-	}
-
-	section.toggle-drowpdown {
-		transform: translateY(0px);
-	}
-
-	section.dropdown-nav ul li {
-		padding-top: 30px;
-		font-size: 20px;
-  }
-}

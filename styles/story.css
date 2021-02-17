@@ -23,7 +23,7 @@
 	opacity: 0;
 	transform: scale(2);
 	transition: all 500ms ease;
-	transition-delay: 1500ms;
+	transition-delay: 1000ms;
 }
 
 .story .images-content .story-photo {
