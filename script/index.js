@@ -88,6 +88,11 @@ $(".contact").click(function() {
   }, 800);
 });
 
+$(".menu").click(function() {
+  dropdownNav.toggleClass('toggle-drowpdown');
+  window.open('/assets/Hampstead-Menu.pdf'); return true;
+});
+
 function viewPost(url) {
   window.open(url, '_blank')
 }

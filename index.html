@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/styles/ig.css" />
   <link rel="stylesheet" href="/styles/contact.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="icon" href="/assets/images/logo.svg"/>
   <title>Hampstead - Bakery &#8226 Cafe</title>
 </head>
 <body>
@@ -20,6 +21,11 @@
     <h2>Loading Please Wait...</h2>
   </section>
 
+  <section class="floating">
+    <p>Chat With Us</p>
+    <img src="/assets/images/sosmed/whatsapp.svg" onclick="window.open(`https://wa.me/971505830155?text=`, '_blank')" />
+  </section>
+  
   <section class="dropdown-nav">
     <ul>
       <li class="about">About</li>
@@ -64,7 +70,7 @@
       <img src="/assets/images/logo.svg" class="hero-logo" loading="lazy" />
       <h2>Baked fresh everyday to spoil your tastebuds with a London twist</h2>
       <!-- <h2></h2> -->
-      <button class="hero-btn">
+      <button class="hero-btn menu">
         View Our Menu
       </button>
     </div>
@@ -94,7 +100,7 @@
     <div class="content-container bakery">
       <h1 class="bakery-title">THE BAKERY</h1>
       <p class="bakery-desc">We are offering a journey to the rural areas in London through our selection of freshly made breads and sandwiches. For the sweet escape, we have a range of biscuits, desserts and the world-famous knickerbocker Sundae</p>
-      <button class="bakery-btn">
+      <button class="bakery-btn menu">
         View Our Menu
       </button>
     </div>
@@ -162,7 +168,7 @@
   <section class="contact-section">
     <div class="form">
       <h1>GET IN TOUCH</h1>
-      <form id="contact">
+      <form id="contact" action="mailto:info@thehampsteadbakery.com" method="GET">
         <input type="text" name="name" id="name" placeholder="Name">
         <div class="email-phone">
           <input type="email" name="email" id="email" placeholder="Email">

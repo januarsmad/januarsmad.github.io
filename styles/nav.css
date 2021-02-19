@@ -56,6 +56,14 @@ nav ul li {
 	font-size: 18px;
 	color: #fff;
 	cursor: pointer;
+	width: 70px;
+	text-align: center;
+}
+
+nav ul li:hover {
+	font-weight: 800;
+	color: #ecc3b2;
+	border: 2px solid #ecc3b2;
 }
 
 section.phone {
@@ -152,6 +160,7 @@ section.dropdown-nav {
 		transform: translateY(-100vh);
 		transition: all 500ms ease;
 		z-index: 10;
+		margin-top: 105px;
 	}
 
 	section.toggle-drowpdown {

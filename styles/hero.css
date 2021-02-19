@@ -45,15 +45,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .parallax {
-    padding: 100px 50px;
-    height: calc(100vh - 105px);
-  }
-
-  .hero {
-    margin-top: 105px;
-  }
-
   .hero-content {
     padding: 50px 30px;
 		text-align: center;
