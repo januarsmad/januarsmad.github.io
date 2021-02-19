@@ -90,7 +90,7 @@ $(".contact").click(function() {
 
 $(".menu").click(function() {
   dropdownNav.toggleClass('toggle-drowpdown');
-  window.open('/assets/Hampstead-Menu.pdf'); return true;
+  window.open('/hampstead-menu.pdf'); return true;
 });
 
 function viewPost(url) {
