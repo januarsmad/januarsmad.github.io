@@ -25,7 +25,7 @@ var heroBtn = $('.hero-btn');
 var storyImgContent = $('.images-content');
 var storyTextContent = $('.desc-content');
 var storyPhoto = $('.story-photo');
-var storyStamp = $('.story-stamp');
+var storyStamp = $('.story-stamp-web');
 var storyText = $('.story-text');
 
 var bakeryTitle = $('.bakery-title');

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css" />
-  <link rel="stylesheet" href="/styles/nav.css" />
-  <link rel="stylesheet" href="/styles/hero.css" />
-  <link rel="stylesheet" href="/styles/story.css" />
-  <link rel="stylesheet" href="/styles/bakery.css" />
-  <link rel="stylesheet" href="/styles/ig.css" />
-  <link rel="stylesheet" href="/styles/contact.css" />
-  <link rel="stylesheet" href="/styles/footer.css" />
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/hero.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/story.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/bakery.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/ig.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/contact.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
   <link rel="icon" href="/assets/images/logo.svg"/>
   <title>Hampstead - Bakery &#8226 Cafe</title>
 </head>
@@ -56,10 +56,10 @@
     </ul>
   </nav>
 
-  <section class="phone">
+  <!-- <section class="phone">
     <img src="/assets/images/phone.svg" loading="lazy" />
     <h3>+971 2349 1386</h3>
-  </section>
+  </section> -->
 
   <section
     class="parallax hero"
@@ -80,7 +80,7 @@
     <div class="content-container story">
       <div class="images-content">
         <img src="/assets/images/photos/story.jpg" class="story-photo" loading="lazy" />
-        <img src="/assets/images/stamp.svg" class="story-stamp" loading="lazy" />
+        <img src="/assets/images/stamp.svg" class="story-stamp-web" loading="lazy" />
       </div>
       <div class="desc-content">
         <h1 class="story-text title">OUR STORY</h1>
@@ -88,6 +88,7 @@
         <p class="story-text p2">“Life is but a day, a fragile dew drop on its perilous way from a tree’s summit”,  - we need to savor every moment of it.</p>
         <p class="story-text p3">Which is why at Hampstead Bakery and Cafe, we’re bringing back the vibe of a rural area, rich with greenery and beautiful scenery for you to take a brief escape from your urban life for a heartbeat, & reboot your sensory with our selection of baked goodness</p>
         <div class="story-text line"></div>
+        <img src="/assets/images/stamp.svg" class="story-stamp-mobile" loading="lazy" />
       </div>
     </div>
   </section>
@@ -97,12 +98,14 @@
     data-parallax="scroll"
     data-image-src="/assets/images/photos/bakery.jpg"
   >
-    <div class="content-container bakery">
-      <h1 class="bakery-title">THE BAKERY</h1>
-      <p class="bakery-desc">We are offering a journey to the rural areas in London through our selection of freshly made breads and sandwiches. For the sweet escape, we have a range of biscuits, desserts and the world-famous knickerbocker Sundae</p>
-      <button class="bakery-btn menu">
-        View Our Menu
-      </button>
+    <div class="shadow">
+      <div class="content-container bakery">
+        <h1 class="bakery-title">THE BAKERY</h1>
+        <p class="bakery-desc">We are offering a journey to the rural areas in London through our selection of freshly made breads and sandwiches. For the sweet escape, we have a range of biscuits, desserts and the world-famous knickerbocker Sundae</p>
+        <button class="bakery-btn menu">
+          View Our Menu
+        </button>
+      </div>
     </div>
   </section>
 
@@ -209,7 +212,7 @@
     </div>
     <div class="footer-section">
       <p class="footer-title">CONTACT</p>
-      <p class="footer-desc">+971 2349 1386</p>
+      <!-- <p class="footer-desc">+971 2349 1386</p> -->
       <p class="footer-desc"><a href="mailto:info@thehampsteadbakery.com">info@thehampsteadbakery.com</a></p>
     </div>
     <div class="footer-section">
