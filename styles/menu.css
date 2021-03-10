@@ -1,0 +1,71 @@
+.menu {
+  position: fixed;
+  font-size: 25px;
+  line-height: 20px;
+  cursor: pointer;
+  z-index: 999;
+  color: #eae1e1;
+}
+
+.home-menu {
+  top: 30px;
+  transition: all 500ms ease;
+}
+
+.home-menu-active {
+  transform: scale(1.3);
+}
+
+.projects-menu {
+  transform: rotate(-90deg) translateY(calc(50vw - 40px));
+  -moz-transform: rotate(-90deg) translateY(calc(50vw - 40px));
+  -webkit-transform: rotate(-90deg) translateY(calc(50vw - 40px));
+  -o-transform: rotate(-90deg) translateY(calc(50vw - 40px));
+  -ms-transform: rotate(-90deg) translateY(calc(50vw - 40px));
+  transition: all 500ms ease;
+}
+
+.projects-menu-active {
+  transform: rotate(-90deg) translateY(calc(-50vw + 120px));
+  -moz-transform: rotate(-90deg) translateY(calc(-50vw + 120px));
+  -webkit-transform: rotate(-90deg) translateY(calc(-50vw + 120px));
+  -o-transform: rotate(-90deg) translateY(calc(-50vw + 120px));
+  -ms-transform: rotate(-90deg) translateY(calc(-50vw + 120px));
+}
+
+.contact-menu {
+  transform: translateY(calc(50vh - 40px));
+  -moz-transform: translateY(calc(50vh - 40px));
+  -webkit-transform: translateY(calc(50vh - 40px));
+  -o-transform: translateY(calc(50vh - 40px));
+  -ms-transform: translateY(calc(50vh - 40px));
+  transition: all 500ms ease;
+}
+
+.contact-menu-active {
+  transform: translateY(calc(-50vh + 120px));
+  -moz-transform: translateY(calc(-50vh + 120px));
+  -webkit-transform: translateY(calc(-50vh + 120px));
+  -o-transform: translateY(calc(-50vh + 120px));
+  -ms-transform: translateY(calc(-50vh + 120px));
+}
+
+.about-menu {
+  transform: rotate(90deg) translateY(calc(50vw - 40px));
+  -moz-transform: rotate(90deg) translateY(calc(50vw - 40px));
+  -webkit-transform: rotate(90deg) translateY(calc(50vw - 40px));
+  -o-transform: rotate(90deg) translateY(calc(50vw - 40px));
+  -ms-transform: rotate(90deg) translateY(calc(50vw - 40px));
+  transition: all 500ms ease;
+}
+
+.about-menu-active {
+  transform: rotate(90deg) translateY(calc(-50vw + 140px));
+  -moz-transform: rotate(90deg) translateY(calc(-50vw + 140px));
+  -webkit-transform: rotate(90deg) translateY(calc(-50vw + 140px));
+  -o-transform: rotate(90deg) translateY(calc(-50vw + 140px));
+  -ms-transform: rotate(90deg) translateY(calc(-50vw + 140px));
+}
+
+
+
