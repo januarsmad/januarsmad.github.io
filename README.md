@@ -1,2 +1,0 @@
-# januarsmad.github.io
-Hampstead
